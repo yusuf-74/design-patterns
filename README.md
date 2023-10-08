@@ -6,6 +6,7 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
 1. [SOLID Principles](#solid-principles)
     1. [Single Responsibility Principle](#single-responsibility-principle)
     2. [Open-Closed Principle](#openclosed-principle)
+    3. [Liskov Substitution Principle](#liskov-substitution-principle)
 
 ## SOLID Principles
 
@@ -40,3 +41,20 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
 
       - Coding Time ;)
         - Check out the code example demonstrating the Open/Closed Principle in action [here](./SOLID/OCP.py).
+
+
+  - ### Liskov Substitution Principle
+
+    Subtypes must be substitutable for their base types without altering the correctness of the program. In other words, if a program is using a base class, it should be able to use its derived class without causing issues.
+
+    - Why L.S.P.?
+        - It ensures that derived classes maintain the expected behavior of their base classes, enhancing code reliability.
+        - It allows for polymorphism and flexibility in software design.
+        - It promotes code reuse and extensibility.
+
+    - Real-World Example
+        - In a geometric shapes hierarchy, you have a base class "Shape" and derived classes like "Circle" and "Rectangle". The LSP ensures that any code expecting a "Shape" can work seamlessly with "Circle" or "Rectangle" instances.
+        - In a banking system, you have a base class "Account" and derived classes like "SavingsAccount" and "CheckingAccount". The LSP ensures that operations on an "Account" can be performed on its derived types without errors.
+
+    - Coding Time ;)
+      - Check out the code example demonstrating the Liskov Substitution Principle in action [here](./SOLID/LSP.py).
