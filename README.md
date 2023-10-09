@@ -7,6 +7,7 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
     1. [Single Responsibility Principle](#single-responsibility-principle)
     2. [Open-Closed Principle](#openclosed-principle)
     3. [Liskov Substitution Principle](#liskov-substitution-principle)
+    4. [Interface Segregation Principle](#interface-segregation-principle)
 
 ## SOLID Principles
 
@@ -58,3 +59,20 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
 
     - Coding Time ;)
       - Check out the code example demonstrating the Liskov Substitution Principle in action [here](./SOLID/LSP.py).
+
+  - ### Interface Segregation Principle
+
+    Clients should not be forced to depend on interfaces they do not use. In other words, interfaces should be specific to the needs of the clients that use them.
+
+    - Why ISP?
+        - It promotes more modular and maintainable code.
+        - It avoids the problem of clients being burdened with unnecessary methods.
+        - It encourages a clear and focused design for interfaces.
+        - It minimizes the impact of changes in one part of the system on unrelated parts.
+
+    - Real-World Example
+        - In a software system, there are various types of workers, including humans and robots. The original design provides a single `Worker` interface with both `work` and `eat` methods. This forces robot classes to implement irrelevant `eat` methods, violating the ISP.
+        - After adhering to ISP, the design splits the `Worker` interface into `Workable` and `Eatable` interfaces, allowing classes like robots to implement only the `Workable` interface, and humans to implement both `Workable` and `Eatable` interfaces, promoting a more focused and modular interface design.
+
+    - Coding Time ;)
+      - Go to [ISP Example](./SOLID/ISP.py) to see the code example demonstrating the Interface Segregation Principle in action.
