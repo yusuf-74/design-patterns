@@ -76,3 +76,22 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
 
     - Coding Time ;)
       - Go to [ISP Example](./SOLID/ISP.py) to see the code example demonstrating the Interface Segregation Principle in action.
+
+  - ### Dependency Inversion Principle
+
+    High-level modules should not depend on low-level modules. Both should depend on abstractions. Abstractions should not depend on details. Details should depend on abstractions.
+
+    - Why DIP?
+        - It promotes decoupling between modules and components.
+        - It enhances flexibility and scalability in the codebase.
+        - It allows for easier unit testing and maintenance.
+        - It encourages a clear separation of concerns.
+
+    - Real-World Example
+        - In a large software project, the high-level business logic components depend on low-level data access components directly. This tight coupling can make it difficult to replace or upgrade the data access layer without affecting the entire system. Adhering to DIP, you can introduce an abstraction (e.g., an interface) that both high-level and low-level components depend on, reducing the coupling and allowing for more flexibility in changing the data access layer.
+
+        > "You can solve every problem with another level of indirection, except for the problem of too many levels of indirection"
+        > - Butler Lampson
+
+    - Coding Time ;)
+      - Go to [DIP Example](./SOLID/DIP.py) to see the code example demonstrating the Dependency Inversion Principle in action.
