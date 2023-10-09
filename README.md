@@ -54,8 +54,8 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
         - It promotes code reuse and extensibility.
 
     - Real-World Example
-        - In a geometric shapes hierarchy, you have a base class "Shape" and derived classes like "Circle" and "Rectangle". The LSP ensures that any code expecting a "Shape" can work seamlessly with "Circle" or "Rectangle" instances.
-        - In a banking system, you have a base class "Account" and derived classes like "SavingsAccount" and "CheckingAccount". The LSP ensures that operations on an "Account" can be performed on its derived types without errors.
+        - In a geometric shapes hierarchy, you have a base class `Shape` and derived classes like `Circle` and `Rectangle`. The LSP ensures that any code expecting a `Shape` can work seamlessly with `Circle` or `Rectangle` instances.
+        - In a banking system, you have a base class `Account` and derived classes like `SavingsAccount` and `CheckingAccount`. The LSP ensures that operations on an `Account` can be performed on its derived types without errors.
 
     - Coding Time ;)
       - Check out the code example demonstrating the Liskov Substitution Principle in action [here](./SOLID/LSP.py).
