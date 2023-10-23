@@ -8,6 +8,9 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
     2. [Open-Closed Principle](#openclosed-principle)
     3. [Liskov Substitution Principle](#liskov-substitution-principle)
     4. [Interface Segregation Principle](#interface-segregation-principle)
+2. [Design Patterns](#design-patterns)
+    1. [Creational Patterns](#creational-patterns)
+       1. [Singleton](#singleton)
 
 ## SOLID Principles
 
@@ -95,3 +98,24 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
 
     - Coding Time ;)
       - Go to [DIP Example](./SOLID/DIP.py) to see the code example demonstrating the Dependency Inversion Principle in action.
+
+## Design Patterns
+
+ - ### Creational Patterns
+
+    - #### Singleton
+
+        The Singleton pattern ensures that only one instance of a class is created and provides a global point of access to that instance.
+
+        - Why Singleton?
+            - It provides a global point of access to a single instance, reducing the need for global variables.
+            - It allows for lazy initialization of the singleton instance, reducing the memory footprint of the program.
+            - It allows for easy access to the singleton instance during unit testing.
+            - It allows for the extension of singleton behavior by subclassing the singleton class.
+
+        - Real-World Example
+            - In a game, there is only one game manager that manages the game state and player scores.
+            - In a GUI application, there is only one application window that handles user input and displays the application state.
+
+        - Coding Time ;)
+          - Go to [Singleton Example](./DP/singleton.py) to see the code example demonstrating the Singleton pattern in action.
