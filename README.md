@@ -11,6 +11,7 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
 2. [Design Patterns](#design-patterns)
     1. [Creational Patterns](#creational-patterns)
        1. [Singleton](#singleton)
+       2. [Prototype](#prototype)
 
 ## SOLID Principles
 
@@ -119,3 +120,20 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
 
         - Coding Time ;)
           - Go to [Singleton Example](./DP/singleton.py) to see the code example demonstrating the Singleton pattern in action.
+
+    - #### Prototype
+            
+        The Prototype pattern is a design concept that allows you to create new objects by duplicating an existing object, known as the prototype. This pattern is especially useful when you want to produce similar objects without explicitly specifying their class, and it becomes particularly beneficial when creating objects with heavy initialization, such as database connections or file I/O.
+
+        - Why Prototype?
+            - It simplifies the process of making new objects that share similar attributes and structures.
+            - It efficiently handles the creation of objects with heavy initialization procedures.
+            - It reduces code duplication by cloning prototypes.
+            - It facilitates the customization of new objects based on existing ones.
+
+        - Real-World Example
+            - In a web application, you can use a prototype object for user accounts. These prototypes can be customized with user-specific data during runtime.
+            - In a data processing system, you can clone a prototype processor that already holds complex and resource-intensive configurations.
+
+        - Implementation
+          - For a Python code example demonstrating the Prototype pattern with objects requiring heavy initialization, take a look at [Prototype Example](./DP/prototype.py).
