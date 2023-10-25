@@ -12,6 +12,7 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
     1. [Creational Patterns](#creational-patterns)
        1. [Singleton](#singleton)
        2. [Prototype](#prototype)
+       3. [Builder](#builder)
 
 ## SOLID Principles
 
@@ -137,3 +138,21 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
 
         - Implementation
           - For a Python code example demonstrating the Prototype pattern with objects requiring heavy initialization, take a look at [Prototype Example](./DP/prototype.py).
+
+
+    - #### Builder
+
+        The Builder pattern is a design pattern that allows for the step-by-step creation of complex objects using the correct sequence of actions. The construction is controlled by a director object that only needs to know the type of object it is to create.
+
+        - Why Builder?
+            - It allows for the step-by-step creation of complex objects.
+            - It allows for the creation of different representations of the same object.
+            - It allows for the creation of complex objects without exposing their internal structure.
+            - It allows for the creation of complex objects without coupling the client code to their class.
+
+        - Real-World Example
+            - In a game, you can use a builder to create different types of characters (e.g., warriors, mages, archers) with different attributes (e.g., strength, intelligence, dexterity).
+            - In a GUI application, you can use a builder to create different types of windows (e.g., main window, dialog window, popup window) with different components (e.g., title bar, menu bar, status bar).
+
+        - Implementation
+          - For a Python code example demonstrating the Builder pattern, take a look at [Builder Example](./DP/builder.py).
