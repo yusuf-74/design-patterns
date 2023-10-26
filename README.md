@@ -13,6 +13,7 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
        1. [Singleton](#singleton)
        2. [Prototype](#prototype)
        3. [Builder](#builder)
+       4. [Factory Method](#factory-method)
 
 ## SOLID Principles
 
@@ -120,7 +121,7 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
             - In a GUI application, there is only one application window that handles user input and displays the application state.
 
         - Coding Time ;)
-          - Go to [Singleton Example](./DP/singleton.py) to see the code example demonstrating the Singleton pattern in action.
+          - Go to [Singleton Example](./DP/creational/singleton.py) to see the code example demonstrating the Singleton pattern in action.
 
     - #### Prototype
             
@@ -137,7 +138,7 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
             - In a data processing system, you can clone a prototype processor that already holds complex and resource-intensive configurations.
 
         - Implementation
-          - For a Python code example demonstrating the Prototype pattern with objects requiring heavy initialization, take a look at [Prototype Example](./DP/prototype.py).
+          - For a Python code example demonstrating the Prototype pattern with objects requiring heavy initialization, take a look at [Prototype Example](./DP/creational/prototype.py).
 
 
     - #### Builder
@@ -155,4 +156,44 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
             - In a GUI application, you can use a builder to create different types of windows (e.g., main window, dialog window, popup window) with different components (e.g., title bar, menu bar, status bar).
 
         - Implementation
-          - For a Python code example demonstrating the Builder pattern, take a look at [Builder Example](./DP/builder.py).
+          - For a Python code example demonstrating the Builder pattern, take a look at [Builder Example](./DP/creational/builder.py).
+    
+    - #### Factory Method
+
+        The Factory Method pattern is a design pattern that provides an interface for creating objects, but it allows subclasses to alter the type of objects that will be created. This pattern is particularly useful when you want to decouple the client code from the specific classes of objects it needs to instantiate.
+
+        - Why Use Factory Method?
+
+        - **Flexibility**: It allows for the creation of objects without specifying their concrete type, making it easy to switch between different implementations or variations of an object.
+
+        - **Decoupling**: It decouples the client code from the details of object creation, ensuring that the client code doesn't depend on specific classes, making it more maintainable and extensible.
+
+        - **Extensibility**: It allows for the extension of the factory method to create new types of objects, making it straightforward to add new object types without modifying existing code.
+
+        - Real-World Examples
+
+        - ##### ***Example 1: Document Generation*** 
+
+
+            Consider a document generation system where you have various types of documents like reports, letters, and invoices. The Factory Method pattern can be used to create document objects:
+
+          - **DocumentFactory**: The base factory class with a method for creating documents.
+          - **ReportFactory**: A subclass that creates report documents.
+          - **LetterFactory**: A subclass that creates letter documents.
+          - **InvoiceFactory**: A subclass that creates invoice documents.
+
+            This approach allows the client to create documents without worrying about the concrete classes involved.
+
+        - ##### ***Example 2: Image Processing***
+
+            In an image processing application, you can use the Factory Method pattern to create various filters for images:
+
+            - **FilterFactory**: The base factory class with a method for creating image filters.
+            - **BlurFilterFactory**: A subclass that creates blur filters.
+            - **SepiaFilterFactory**: A subclass that creates sepia tone filters.
+            - **GrayscaleFilterFactory**: A subclass that creates grayscale filters.
+
+            This enables the application to apply different filters to images without hardcoding the filter types.
+
+        - Implementation
+          - For a Python code example demonstrating the Factory pattern, take a look at [Factory Example](./DP/creational/factory.py).
