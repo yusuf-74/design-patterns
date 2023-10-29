@@ -14,6 +14,7 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
        2. [Prototype](#prototype)
        3. [Builder](#builder)
        4. [Factory Method](#factory-method)
+       5. [Abstract Factory](#abstract-factory)
 
 ## SOLID Principles
 
@@ -236,4 +237,4 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
 
        - Implementation
 
-           - For a Python code example demonstrating the Abstract Factory pattern, take a look at [Abstract Factory Example](./DP/abstractFactory.py).
+           - For a Python code example demonstrating the Abstract Factory pattern, take a look at [Abstract Factory Example](./DP/creational/abstractFactory.py).
