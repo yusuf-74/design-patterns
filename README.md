@@ -15,6 +15,8 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
        3. [Builder](#builder)
        4. [Factory Method](#factory-method)
        5. [Abstract Factory](#abstract-factory)
+    2. [Structural Patterns](#structural-patterns)
+       1. [Proxy](#proxy)
 
 ## SOLID Principles
 
@@ -238,3 +240,35 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
        - Implementation
 
            - For a Python code example demonstrating the Abstract Factory pattern, take a look at [Abstract Factory Example](./DP/creational/abstractFactory.py).
+
+ - ### Structural Patterns
+    - #### Proxy
+
+        The Proxy pattern is a design pattern that provides a surrogate or placeholder for another object to control access to it. This pattern is particularly useful when you want to add functionality to an existing object without changing its code.
+
+        - Why Use Proxy?
+
+            - **Security**: It allows for the implementation of security restrictions on the original object.
+            - **Simplicity**: It provides a simpler interface to the original object.
+
+        - Real-World Examples
+
+            - ##### ***Example 1: Ngnix Web Server***
+
+                In a web server, you can use the Proxy pattern to implement a caching proxy:
+
+                - **WebServer**: The original object that handles incoming requests.
+                - **CachingProxy**: The proxy object that caches the results of requests.
+
+                This approach allows the proxy to handle requests that can be served from the cache, reducing the load on the web server.
+            
+            - ##### ***Example 2: SMS Limiter***
+
+                In a messaging application, you can use the Proxy pattern to implement a proxy that limits the number of SMS messages sent per day:
+
+                - **MessageSender**: The original object that sends SMS messages.
+                - **MessageSenderProxy**: The proxy object that limits the number of SMS messages sent per day.
+
+                This approach allows the proxy to limit the number of SMS messages sent per day, preventing the original object from exceeding the daily limit.
+        - Implementation
+            - For a Python code example demonstrating the Proxy pattern, take a look at [Proxy Example](./DP/structural/proxy.py).
