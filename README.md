@@ -272,3 +272,36 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
                 This approach allows the proxy to limit the number of SMS messages sent per day, preventing the original object from exceeding the daily limit.
         - Implementation
             - For a Python code example demonstrating the Proxy pattern, take a look at [Proxy Example](./DP/structural/proxy.py).
+    
+    - #### Decorator
+
+        The Decorator pattern is a design pattern that allows behavior to be added to an individual object, dynamically, without affecting the behavior of other objects from the same class. This pattern is particularly useful when you want to add functionality to an existing object without changing its code.
+
+        - Why Use Decorator?
+
+            - **Extensibility**: It allows for the dynamic addition of new behavior to an object without affecting the behavior of other objects from the same class.
+            - **Simplicity**: It provides a simpler interface to the original object.
+
+        - Real-World Examples
+
+            - ##### ***Example 1: Coffee Shop***
+
+                In a coffee shop, you can use the Decorator pattern to implement a decorator that adds extra toppings to coffee:
+
+                - **Coffee**: The original object that represents a coffee.
+                - **CoffeeDecorator**: The decorator object that adds extra toppings to coffee.
+
+                This approach allows the decorator to add extra toppings to coffee, without affecting the behavior of other coffee objects.
+
+            - ##### ***Example 2: Text Editor***
+
+                In a text editor, you can use the Decorator pattern to implement a decorator that adds spell checking to text:
+
+                - **Text**: The original object that represents text.
+                - **TextDecorator**: The decorator object that adds spell checking to text.
+
+                This approach allows the decorator to add spell checking to text, without affecting the behavior of other text objects.
+
+        - Implementation
+
+            - For a Python code example demonstrating the Decorator patclook at [Decorator Example](./DP/structural/decorator.py).
