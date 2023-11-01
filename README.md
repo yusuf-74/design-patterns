@@ -17,6 +17,8 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
        5. [Abstract Factory](#abstract-factory)
     2. [Structural Patterns](#structural-patterns)
        1. [Proxy](#proxy)
+       2. [Decorator](#decorator)
+       3. [Adapter](#adapter)
 
 ## SOLID Principles
 
@@ -305,3 +307,36 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
         - Implementation
 
             - For a Python code example demonstrating the Decorator patclook at [Decorator Example](./DP/structural/decorator.py).
+
+    - #### Adapter
+
+        The Adapter pattern is a design pattern that allows the interface of an existing class to be used as another interface. This pattern is particularly useful when you want to use an existing class that doesn't meet the requirements of a specific interface.
+
+        - Why Use Adapter?
+
+            - **Reusability**: It allows for the reuse of existing classes that don't meet the requirements of a specific interface.
+            - **Simplicity**: It provides a simpler interface to the original object.
+
+        - Real-World Examples
+
+            - ##### ***Example 1: Payment Gateway***
+
+                In a payment processing system, you can use the Adapter pattern to implement an adapter that converts a payment gateway's interface to a common interface:
+
+                - **PaymentGateway**: The original object that represents a payment gateway.
+                - **PaymentGatewayAdapter**: The adapter object that converts a payment gateway's interface to a common interface.
+
+                This approach allows the adapter to convert a payment gateway's interface to a common interface, allowing the payment gateway to be used in the payment processing system.
+
+            - ##### ***Example 2: Database***
+
+                In a database system, you can use the Adapter pattern to implement an adapter that converts a database's interface to a common interface:
+
+                - **Database**: The original object that represents a database.
+                - **DatabaseAdapter**: The adapter object that converts a database's interface to a common interface.
+
+                This approach allows the adapter to convert a database's interface to a common interface, allowing the database to be used in the database system.
+
+        - Implementation
+
+            - For a Python code example demonstrating the Adapter pattern, take a look at [Adapter Example](./DP/structural/adapter.py).
