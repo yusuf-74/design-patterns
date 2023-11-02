@@ -19,6 +19,7 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
        1. [Proxy](#proxy)
        2. [Decorator](#decorator)
        3. [Adapter](#adapter)
+       4. [Facade](#facade)
 
 ## SOLID Principles
 
@@ -340,3 +341,37 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
         - Implementation
 
             - For a Python code example demonstrating the Adapter pattern, take a look at [Adapter Example](./DP/structural/adapter.py).
+
+    - #### Facade
+
+        The Facade pattern is a design pattern that provides a simplified interface to a complex system of classes, libraries, or frameworks. This pattern is particularly useful when you want to provide a simple interface to a complex subsystem.
+
+        - Why Use Facade?
+
+            - **Simplicity**: It provides a simpler interface to a complex subsystem.
+            - **Decoupling**: It decouples the client code from the details of the subsystem.
+            - **Scalability**: It makes it easy to add new features to the subsystem without affecting existing code.
+
+        - Real-World Examples
+
+            - ##### ***Example 1: Operating System***
+
+                In an operating system, you can use the Facade pattern to implement a facade that provides a simple interface to a complex subsystem:
+
+                - **OperatingSystem**: The original object that represents an operating system.
+                - **OperatingSystemFacade**: The facade object that provides a simple interface to the operating system.
+
+                This approach allows the facade to provide a simple interface to a complex subsystem, allowing the operating system to be used in the operating system.
+
+            - ##### ***Example 2: Web Server***
+
+                In a web server, you can use the Facade pattern to implement a facade that provides a simple interface to a complex subsystem:
+
+                - **WebServer**: The original object that represents a web server.
+                - **WebServerFacade**: The facade object that provides a simple interface to the web server.
+
+                This approach allows the facade to provide a simple interface to a complex subsystem, allowing the web server to be used in the web server.
+
+        - Implementation
+
+            - For a Python code example demonstrating the Facade pattern, take a look at [Facade Example](./DP/structural/facade.py).
