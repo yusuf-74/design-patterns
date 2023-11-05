@@ -20,6 +20,7 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
        2. [Decorator](#decorator)
        3. [Adapter](#adapter)
        4. [Facade](#facade)
+       5. [Flyweight](#flyweight)
 
 ## SOLID Principles
 
@@ -375,3 +376,36 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
         - Implementation
 
             - For a Python code example demonstrating the Facade pattern, take a look at [Facade Example](./DP/structural/facade.py).
+
+    - #### Flyweight
+
+        The Flyweight pattern is a design pattern that allows for the sharing of a common object across multiple contexts. This pattern is particularly useful when you want to reduce the memory footprint of an application by sharing a common object across multiple contexts.
+
+        - Why Use Flyweight?
+
+            - **Memory Efficiency**: It reduces the memory footprint of an application by sharing a common object across multiple contexts.
+            - **Scalability**: It makes it easy to add new contexts without affecting existing code.
+
+        - Real-World Examples
+
+            - ##### ***Example 1: Tax Calculator***
+
+                In a tax calculator application, you can use the Flyweight pattern to implement a flyweight that represents a tax rate:
+
+                - **TaxRate**: The original object that represents a tax rate.
+                - **TaxRateFlyweight**: The flyweight object that represents a tax rate.
+
+                This approach allows the flyweight to represent a tax rate, allowing the tax rate to be used in the tax calculator application.
+
+            - ##### ***Example 2: Discount Calculator***
+
+                In a discount calculator application, you can use the Flyweight pattern to implement a flyweight that represents a discount rate:
+
+                - **DiscountRate**: The original object that represents a discount rate.
+                - **DiscountRateFlyweight**: The flyweight object that represents a discount rate.
+
+                This approach allows the flyweight to represent a discount rate, allowing the discount rate to be used in the discount calculator application.
+
+        - Implementation
+
+            - For a Python code example demonstrating the Flyweight pattern, take a look at [Flyweight Example](./DP/structural/flyweight.py).
