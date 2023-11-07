@@ -21,6 +21,7 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
        3. [Adapter](#adapter)
        4. [Facade](#facade)
        5. [Flyweight](#flyweight)
+       6. [Composite](#composite)
 
 ## SOLID Principles
 
@@ -409,3 +410,36 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
         - Implementation
 
             - For a Python code example demonstrating the Flyweight pattern, take a look at [Flyweight Example](./DP/structural/flyweight.py).
+
+    - #### Composite
+
+        The Composite pattern is a design pattern that allows for the creation of objects with properties that are a composition of other objects. This pattern is particularly useful when you want to create objects that are a composition of other objects.
+
+        - Why Use Composite?
+
+            - **Simplicity**: It provides a simpler interface to a complex object.
+            - **Scalability**: It makes it easy to add new objects to the composition without affecting existing code.
+
+        - Real-World Examples
+
+            - ##### ***Example 1: Shipping Boxes***
+
+                In a shipping application, you can use the Composite pattern to implement a composite that represents a shipping box:
+
+                - **Box**: The original object that represents a shipping box.
+                - **BoxComposite**: The composite object that represents a shipping box.
+
+                This approach allows the composite to represent a shipping box, allowing the shipping box to be used in the shipping application.
+            
+            - ##### ***Example 2: Directory***
+
+                In a directory, you can use the Composite pattern to implement a composite that represents a directory:
+
+                - **Directory**: The original object that represents a directory.
+                - **DirectoryComposite**: The composite object that represents a directory.
+
+                This approach allows the composite to represent a directory, allowing the directory to be used in the directory.
+
+        - Implementation
+
+            - For a Python code example demonstrating the Composite pattern, take a look at [Composite Example](./DP/structural/composite.py).
