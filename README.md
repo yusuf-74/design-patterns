@@ -22,6 +22,7 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
        4. [Facade](#facade)
        5. [Flyweight](#flyweight)
        6. [Composite](#composite)
+       7. [Bridge](#bridge)
 
 ## SOLID Principles
 
@@ -443,3 +444,35 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
         - Implementation
 
             - For a Python code example demonstrating the Composite pattern, take a look at [Composite Example](./DP/structural/composite.py).
+
+    - #### Bridge
+
+        The Bridge pattern is a design pattern that allows for the separation of an object's interface from its implementation. This pattern is particularly useful when you want to decouple an object's interface from its implementation.
+
+        - Why Use Bridge?
+
+            - **Decoupling**: It decouples an object's interface from its implementation.
+            - **Simplicity**: It provides a simpler interface to an object's implementation.
+
+        - Real-World Examples
+
+            - ##### ***Example 1: View-Resource***
+
+                In a web application, you can use the Bridge pattern to implement a bridge that separates a view's interface from its resource:
+
+                - **View**: The original object that represents a view.
+                - **ViewBridge**: The bridge object that separates a view's interface from its resource.
+
+                This approach allows the bridge to separate a view's interface from its resource, allowing the view to be used in the web application.
+
+            - ##### ***Example 2: Vehicle***
+
+                In a vehicle application, you can use the Bridge pattern to implement a bridge that separates a vehicle's interface from its implementation:
+
+                - **Vehicle**: The original object that represents a vehicle.
+                - **VehicleBridge**: The bridge object that separates a vehicle's interface from its implementation.
+
+                This approach allows the bridge to separate a vehicle's interface from its implementation, allowing the vehicle to be used in the
+
+        - Implementation
+            - For a Python code example demonstrating the Bridge pattern, take a look at [Bridge Example](./DP/structural/bridge.py).
