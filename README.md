@@ -25,6 +25,7 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
        7. [Bridge](#bridge)
     3. [Behavioral Patterns](#behavioral-patterns)
        1. [Strategy](#strategy)
+       2. [Observer](#observer)
 
 ## SOLID Principles
 
@@ -513,3 +514,37 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
         - Implementation
 
             - For a Python code example demonstrating the Strategy pattern, take a look at [Strategy Example](./DP/behavioral/strategy.py).
+
+    - #### Observer
+
+        The Observer pattern is a design pattern that allows for the notification of changes in an object's state. This pattern is particularly useful when you want to notify other objects of changes in an object's state.
+
+        - Why Use Observer?
+
+            - **Flexibility**: It allows for the notification of changes in an object's state.
+            - **Simplicity**: It provides a simpler interface to an object's state.
+            - **decoupling**: It decouples an object's state from the client code.
+
+        - Real-World Examples
+
+            - ##### ***Example 1: Stock Market***
+
+                In a stock market application, you can use the Observer pattern to implement an observer that represents a stock:
+
+                - **Stock**: The original object that represents a stock.
+                - **StockObserver**: The observer object that represents a stock.
+
+                This approach allows the observer to represent a stock, allowing the stock to be used in the stock market application.
+
+            - ##### ***Example 2: Weather***
+
+                In a weather application, you can use the Observer pattern to implement an observer that represents the weather:
+
+                - **Weather**: The original object that represents the weather.
+                - **WeatherObserver**: The observer object that represents the weather.
+
+                This approach allows the observer to represent the weather, allowing the weather to be used in the weather application.
+
+        - Implementation
+
+            - For a Python code example demonstrating the Observer pattern, take a look at [Observer Example](./DP/behavioral/observer.py).
