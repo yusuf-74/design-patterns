@@ -23,6 +23,8 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
        5. [Flyweight](#flyweight)
        6. [Composite](#composite)
        7. [Bridge](#bridge)
+    3. [Behavioral Patterns](#behavioral-patterns)
+       1. [Strategy](#strategy)
 
 ## SOLID Principles
 
@@ -476,3 +478,38 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
 
         - Implementation
             - For a Python code example demonstrating the Bridge pattern, take a look at [Bridge Example](./DP/structural/bridge.py).
+
+ - ### Behavioral Patterns
+    - #### Strategy
+
+        The Strategy pattern is a design pattern that allows for the selection of an algorithm at runtime. This pattern is particularly useful when you want to select an algorithm at runtime.
+
+        - Why Use Strategy?
+
+            - **Flexibility**: It allows for the selection of an algorithm at runtime.
+            - **Simplicity**: It provides a simpler interface to an algorithm.
+            - **decoupling**: It decouples an algorithm from the client code.
+
+        - Real-World Examples
+
+            - ##### ***Example 1: Sorting***
+
+                In a sorting application, you can use the Strategy pattern to implement a strategy that represents a sorting algorithm:
+
+                - **Sorting**: The original object that represents a sorting algorithm.
+                - **SortingStrategy**: The strategy object that represents a sorting algorithm.
+
+                This approach allows the strategy to represent a sorting algorithm, allowing the sorting algorithm to be used in the sorting application.
+
+            - ##### ***Example 2: Compression***
+
+                In a compression application, you can use the Strategy pattern to implement a strategy that represents a compression algorithm:
+
+                - **Compression**: The original object that represents a compression algorithm.
+                - **CompressionStrategy**: The strategy object that represents a compression algorithm.
+
+                This approach allows the strategy to represent a compression algorithm, allowing the compression algorithm to be used in the compression application.
+
+        - Implementation
+
+            - For a Python code example demonstrating the Strategy pattern, take a look at [Strategy Example](./DP/behavioral/strategy.py).
