@@ -26,6 +26,7 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
     3. [Behavioral Patterns](#behavioral-patterns)
        1. [Strategy](#strategy)
        2. [Observer](#observer)
+       3. [Command](#command)
 
 ## SOLID Principles
 
@@ -548,3 +549,35 @@ Welcome to the "SOLID Principles and Design Patterns Explained" repository! Dive
         - Implementation
 
             - For a Python code example demonstrating the Observer pattern, take a look at [Observer Example](./DP/behavioral/observer.py).
+
+    - #### Command
+
+        The Command pattern is a design pattern that allows for the encapsulation of a request as an object. This pattern is particularly useful when you want to encapsulate a request as an object.
+
+        - Why Use Command?
+
+            - **Flexibility**: if you are doing do-undo operations, it allows for the encapsulation of a request as an object.
+            - **Simplicity**: It provides a simpler interface to a request.
+
+        - Real-World Examples
+
+            - ##### ***Example 1: Text Editor***
+
+                In a text editor application, you can use the Command pattern to implement a command that represents a text operation:
+
+                - **TextOperation**: The original object that represents a text operation.
+                - **TextOperationCommand**: The command object that represents a text operation.
+
+                This approach allows the command to represent a text operation, allowing the text operation to be used in the text editor application.
+
+            - ##### ***Example 2: Smart Home***
+
+                In a smart home application, you can use the Command pattern to implement a command that represents a smart home operation:
+
+                - **Invoker**: The original object that invoke smart home operations.
+                - **Command**: The command object that represents a smart home operation.
+            
+                This approach allows the command to represent a smart home operation, allowing the smart home operation to be used in the smart home application.
+        - Implementation
+
+            - For a Python code example demonstrating the Command pattern, take a look at [Command Example](./DP/behavioral/command.py).
